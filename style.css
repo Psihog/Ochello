@@ -1,0 +1,385 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+h1{
+    font-family: Arial;
+}
+
+.main{
+    display: flex;
+    align-items: center; 
+    padding-right: 3%;
+    justify-content: space-between;
+    height: 800px;
+    background-color: #F9F9F9;
+}
+
+.main h1{
+    font-size: 100pt;
+}
+
+.main img{
+    object-fit: cover;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+.sidebar img{
+    height: 32px;
+    width: 32px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+}
+
+.vl{
+    border-left: 1.5px solid black;
+    height: 220px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    margin-right: 20%;
+}
+
+.text a{
+    text-decoration: none;
+    color: black;
+    border: black solid 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top:200px;
+}
+
+.text p{
+    padding-bottom:150px;
+}
+
+.info{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    align-items: center; 
+}
+
+.text2{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.text2 h1{
+    font-size: 50pt;
+}
+
+.choise{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: center
+}
+
+.hl{
+    border-top: 1.5px solid black;
+    width: 1200px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.choise a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+.choise a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition:0.4s;
+}
+
+.collage{
+    display: flex;
+    height:500px;
+}
+
+.collage img{
+    width:50%;
+}
+
+.void{
+    height:80px;
+    background-color: white;
+}
+
+.bestseller{
+    padding-top: 24px;
+    padding-bottom: 64px;
+    background-color: #F9F9F9;
+}
+
+.bestseller .hl{
+    border-top: 1.5px solid black;
+    width: 1400px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.heading{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18pt;
+    margin-right: 3%;
+}
+
+.heading p{
+    margin-left: 20px;
+}
+
+.cards{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    align-items: left; 
+    flex-direction: column;
+    width:32%;
+}
+
+.card h3{ 
+    margin: 8 0 4 0;
+}
+
+.card img{ 
+    height:550px;
+    object-fit: cover;
+}
+
+.price{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;  
+    justify-content: space-between;
+    margin: 8 0 4 0;
+}
+
+.circle{
+    border:1px solid black;
+    border-radius: 50%;
+    height:16px;
+    width:16px;
+}
+
+.sizes{
+    display: flex;
+    align-items: center; 
+    flex-direction: row; 
+    margin: 4 0 16 0;
+}
+
+.size{
+    padding: 4 4 4 4;
+    border: 1px solid black;
+    margin-right: 8px;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+   background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; 
+}
+
+.about{
+    display: flex;
+    align-items: center; 
+    padding-left:3%;
+    justify-content: space-between;
+    height: 800px;
+    background-color: white;
+    }
+
+.about img{
+        object-fit: cover;
+    }
+.about h1{
+    font-size: 100pt;
+    
+}
+
+.about p{
+    padding-bottom:80px;
+}
+
+.reviews{
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
+    padding-top: 24px;
+    padding-bottom: 64px;
+    background-color: #F9F9F9;
+}
+
+.reviews .hl{
+    border-top: 1.5px solid black;
+    width: 1400px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.review{
+    display: flex;
+    align-items: left; 
+    flex-direction: column;  
+    justify-content: space-between;
+    padding: 16 16 16 16;
+    border:1px solid black;
+    width: 30%;
+    margin: 8 8 8 8;
+    height:200px;
+}
+
+.reviewList{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;  
+    justify-content: space-between;
+}
+.user{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;  
+    justify-content: space-between;
+    width:24%;
+}
+
+.user .circle{
+background-color: black;
+height:24px;
+width:24px;
+}
+
+.chevrons{
+    margin: 24 0 32 0;
+    display: flex;
+    align-items: center; 
+    flex-direction: row;  
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    align-items: top; 
+    flex-direction: row;  
+    
+    background-color: #2E2E2E;
+    font-family: 'Montserrat', sans-serif;
+ 
+    padding: 0 3% 0 3%;
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+    padding: 8 0 8 0;
+}
+
+footer p{
+    color: grey;
+    padding: 8 0 8 0;
+}
+
+footer h3{
+    color:white;
+}
+footer img{
+    height: 32px;
+    width: 32px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right:8px;
+    fill: white;
+}
+
+footer h3{
+    margin-bottom:16px;
+}
+
+.logo{
+    position:absolute;
+}
+
+footer h2{
+    position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top:40px;
+    left:1370px;
+    color: white;
+}
+
+.column{
+    display: flex;
+    align-items: left; 
+    flex-direction: column; 
+    margin:40 64 40 0;
+}
+
+.column2{
+    display: flex;
+    align-items: left; 
+    flex-direction: row; 
+    margin:32 0 32 0;
+}
+footer .vl{
+    border-left: 1.5px solid white;
+    height: 370px;
+    margin:0 96 0 96;
+   }
+
+.social{
+    display: flex;
+    align-items: center; 
+    flex-direction: row; 
+}
