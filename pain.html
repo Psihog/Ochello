@@ -4,130 +4,134 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>shh</title>
     </head>
     <body>
-        <div class="main">
-            <img src="img/girl.png" height=100% width=45%>
-            <div class="text">
-                <h1>shh!</h1>
-                <p>clothing brand<br>
-                   base collection<br>
-                   shop online</p>
-                <a href="#">Catalogue</a>
-            </div>
-            <div class="sidebar">
-                <img src="svg/hamburger-menu.svg">
-                <div class="vl"></div>
-                <img src="svg/instagram.svg">
-                <img src="svg/vk.svg">
-                <img src="svg/telegram.svg">
-                <div class="vl"></div>
-            </div>
-        </div>
-        <div class="info">
-            <div class="text2">
-                <h1>shh!</h1>
+        <section class="hero-screen">
+            <img src="img/girl.png">
+                <div class="hero-screen__text">
+                    <h1>shh!</h1>
+                    <span>clothing brand<br>
+                    base collection<br>
+                    shop online</span>
+                    <button> 
+                        Catalogue
+                    </button>
+                </div>
+                <div class="hero-screen__sidebar">
+                    <svg id="hero-screen__sidebar_hamburger_menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.61538 7C4.45217 7 4.29565 7.06438 4.18024 7.17899C4.06483 7.2936 4 7.44903 4 7.61111C4 7.77319 4.06483 7.92863 4.18024 8.04323C4.29565 8.15784 4.45217 8.22222 4.61538 8.22222H19.3846C19.5478 8.22222 19.7044 8.15784 19.8198 8.04323C19.9352 7.92863 20 7.77319 20 7.61111C20 7.44903 19.9352 7.2936 19.8198 7.17899C19.7044 7.06438 19.5478 7 19.3846 7H4.61538ZM4 12.5C4 12.3379 4.06483 12.1825 4.18024 12.0679C4.29565 11.9533 4.45217 11.8889 4.61538 11.8889H19.3846C19.5478 11.8889 19.7044 11.9533 19.8198 12.0679C19.9352 12.1825 20 12.3379 20 12.5C20 12.6621 19.9352 12.8175 19.8198 12.9321C19.7044 13.0467 19.5478 13.1111 19.3846 13.1111H4.61538C4.45217 13.1111 4.29565 13.0467 4.18024 12.9321C4.06483 12.8175 4 12.6621 4 12.5V12.5ZM4 17.3889C4 17.2268 4.06483 17.0714 4.18024 16.9568C4.29565 16.8422 4.45217 16.7778 4.61538 16.7778H19.3846C19.5478 16.7778 19.7044 16.8422 19.8198 16.9568C19.9352 17.0714 20 17.2268 20 17.3889C20 17.551 19.9352 17.7064 19.8198 17.821C19.7044 17.9356 19.5478 18 19.3846 18H4.61538C4.45217 18 4.29565 17.9356 4.18024 17.821C4.06483 17.7064 4 17.551 4 17.3889V17.3889Z" fill="black"/>
+                    </svg>
+                    <div class="hero-screen__sidebar_vertical-line"></div>
+                    <svg id="hero-screen__sidebar_instagram" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.24407 9.24407C9.97498 8.51316 10.9663 8.10254 12 8.10254C13.0336 8.10254 14.025 8.51316 14.7559 9.24407C15.4868 9.97498 15.8974 10.9663 15.8974 12C15.8974 13.0336 15.4868 14.025 14.7559 14.7559C14.025 15.4868 13.0336 15.8974 12 15.8974C10.9663 15.8974 9.97498 15.4868 9.24407 14.7559C8.51316 14.025 8.10254 13.0336 8.10254 12C8.10254 10.9663 8.51316 9.97498 9.24407 9.24407ZM12 9.33331C11.2927 9.33331 10.6145 9.61426 10.1144 10.1144C9.61426 10.6145 9.33331 11.2927 9.33331 12C9.33331 12.7072 9.61426 13.3855 10.1144 13.8856C10.6145 14.3857 11.2927 14.6666 12 14.6666C12.7072 14.6666 13.3855 14.3857 13.8856 13.8856C14.3857 13.3855 14.6666 12.7072 14.6666 12C14.6666 11.2927 14.3857 10.6145 13.8856 10.1144C13.3855 9.61426 12.7072 9.33331 12 9.33331Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.71795 5.23077C7.79309 5.23077 6.90611 5.59817 6.25214 6.25214C5.59817 6.90611 5.23077 7.79309 5.23077 8.71795V15.2821C5.23077 16.2069 5.59817 17.0939 6.25214 17.7479C6.90611 18.4018 7.79309 18.7692 8.71795 18.7692H15.2821C16.2069 18.7692 17.0939 18.4018 17.7479 17.7479C18.4018 17.0939 18.7692 16.2069 18.7692 15.2821V8.71795C18.7692 7.79309 18.4018 6.90611 17.7479 6.25214C17.0939 5.59817 16.2069 5.23077 15.2821 5.23077H8.71795ZM5.38186 5.38186C6.26664 4.49707 7.46667 4 8.71795 4H15.2821C16.5333 4 17.7334 4.49707 18.6181 5.38186C19.5029 6.26664 20 7.46667 20 8.71795V15.2821C20 16.5333 19.5029 17.7334 18.6181 18.6181C17.7334 19.5029 16.5333 20 15.2821 20H8.71795C7.46667 20 6.26664 19.5029 5.38186 18.6181C4.49707 17.7334 4 16.5333 4 15.2821V8.71795C4 7.46667 4.49707 6.26664 5.38186 5.38186Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.935 7.03114C17.1865 7.25976 17.205 7.64896 16.9764 7.90044L16.9682 7.90946C16.7396 8.16094 16.3504 8.17948 16.0989 7.95085C15.8474 7.72223 15.8289 7.33303 16.0575 7.08155L16.0657 7.07253C16.2943 6.82105 16.6835 6.80252 16.935 7.03114Z" fill="black"/>
+                    </svg>
+                    <svg id="hero-screen__sidebar_vk" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6332 7.64356C19.7449 7.27228 19.6331 7 19.1046 7H17.3535C16.908 7 16.7044 7.23555 16.5926 7.49425C16.5926 7.49425 15.7023 9.66528 14.4407 11.073C14.0335 11.4826 13.8475 11.6119 13.6255 11.6119C13.5145 11.6119 13.3532 11.4826 13.3532 11.1113V7.64356C13.3532 7.19802 13.2247 7 12.8534 7H10.1019C9.82401 7 9.65633 7.206 9.65633 7.40243C9.65633 7.82402 10.2871 7.92143 10.3518 9.10955V11.687C10.3518 12.2515 10.2504 12.3545 10.0268 12.3545C9.43356 12.3545 7.98993 10.1755 7.13318 7.68109C6.9663 7.19642 6.79782 7.0008 6.35068 7.0008H4.60045C4.09981 7.0008 4 7.23635 4 7.49505C4 7.95976 4.59326 10.2593 6.76349 13.3007C8.21031 15.3775 10.2472 16.5033 12.1028 16.5033C13.2151 16.5033 13.3524 16.2534 13.3524 15.8222V14.2525C13.3524 13.7526 13.4586 13.652 13.8107 13.652C14.0694 13.652 14.515 13.783 15.5538 14.7834C16.7403 15.97 16.9367 16.5025 17.6035 16.5025H19.3537C19.8535 16.5025 20.1034 16.2526 19.9597 15.7592C19.8024 15.2681 19.2355 14.5535 18.4834 13.7079C18.0745 13.2256 17.4637 12.7066 17.2777 12.4471C17.0182 12.1126 17.0932 11.9649 17.2777 11.6678C17.2785 11.6686 19.4112 8.6648 19.6332 7.64356V7.64356Z" fill="black"/>
+                    </svg>
+                    <svg id="hero-screen__sidebar_telegram" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12V12ZM12.287 9.906C11.509 10.23 9.953 10.9 7.621 11.916C7.243 12.066 7.044 12.214 7.026 12.358C6.996 12.601 7.301 12.697 7.716 12.828L7.891 12.883C8.299 13.016 8.849 13.171 9.134 13.177C9.394 13.183 9.683 13.077 10.002 12.857C12.181 11.386 13.306 10.643 13.376 10.627C13.426 10.615 13.496 10.601 13.542 10.643C13.589 10.684 13.584 10.763 13.579 10.784C13.549 10.913 12.352 12.025 11.733 12.601C11.54 12.781 11.403 12.908 11.375 12.937C11.3133 13 11.2507 13.062 11.187 13.123C10.807 13.489 10.523 13.763 11.202 14.211C11.529 14.427 11.791 14.604 12.052 14.782C12.336 14.976 12.62 15.169 12.988 15.411C13.081 15.471 13.171 15.536 13.258 15.598C13.589 15.834 13.888 16.046 14.255 16.012C14.469 15.992 14.69 15.792 14.802 15.192C15.067 13.775 15.588 10.706 15.708 9.441C15.7153 9.33584 15.711 9.2302 15.695 9.126C15.6856 9.04192 15.6449 8.96446 15.581 8.909C15.49 8.84619 15.3815 8.81365 15.271 8.816C14.971 8.821 14.508 8.982 12.287 9.906V9.906Z" fill="black"/>
+                    </svg>
+                    <div class="hero-screen__sidebar_vertical-line"></div>
+                </div>
+        </section>
+        <section class="info">
+            <div class="info__text">
+                <span>shh!</span>
                 <p>
                     is a fashion brand, all models of which<br>
                     are produced in limited quantities, which<br>
                     helps to preserve the individuality of the client 
                 </p>        
             </div>
-            <div class="choise">
+            <div class="info__choise">
                 <a href="#">Man</a>
-                <div class="hl"></div>
+                <hr noshade color="black" size="1">
                 <a href="#">Woman</a>
             </div>
-        </div>
-        <div class="collage">
+        </section>
+        <section class="collage">
             <img src="img/man.png">
             <img src="img/girl2.png">
-        </div>
-        <div class="void">
-        </div>
-        <div class="Bestseller">
-            <div class="heading">
-                <div class="hl"></div>
-                <p>Bestseller</p>
+        </section>
+        <section class="bestseller">
+            <div class="bestseller__heading">
+                <hr noshade color="black" size="1">
+                <span>Bestseller</span>
             </div>
-            <div class="cards">
-                <div class="card">
+            <div class="bestseller__cards">
+                <div class="bestseller__cards_card">
                     <img src="img/card1.png">
-                    <h3>
+                    <span>
                         Top ONE
-                    </h3>
+                    </span>
                     <p>
                         Top From Soft Materials
                     </p>
-                    <div class="price"> 
-                        <div class="circle">
-                        </div>
-                        <h3>2000$</h3>
+                    <div class="bestseller__cards_card_price">
+                        <form> 
+                            <button id="bestseller__cards_card_price-button-1" type="radio"></button>
+                            <button id="bestseller__cards_card_price-button-2" type="radio"></button>
+                        </form>
+                        <span>2000$</span>
                     </div>
-                    <div class="sizes">
-                            <div class="size">
-                            <p>XS-S</p>
-                            </div>
-                            <div class="size">
-                                <p>M-L</p>
-                            </div>
-                    </div>
-                    <a href="#">Buy</a>
+                    <form>
+                        <button id="bestseller__cards_card_size-button" type="radio">XS-S</button>
+                        <button id="bestseller__cards_card_size-button" type="radio">M-L</button>
+                    </form>
+                    <button id="bestseller__cards_card_buy-button">Buy</button>
                 </div>
-                <div class="card">
+                <div class="bestseller__cards_card">
                     <img src="img/card2.png">
-                    <h3>
+                    <span>
                         Top ONE
-                    </h3>
+                    </span>
                     <p>
                         Top From Soft Materials
                     </p>
-                    <div class="price"> 
-                        <div class="circle">
-                        </div>
-                        <h3>2000$</h3>
+                    <div class="bestseller__cards_card_price">
+                        <form> 
+                            <button id="bestseller__cards_card_price-button-1" type="radio"></button>
+                            <button id="bestseller__cards_card_price-button-2" type="radio"></button>
+                        </form>
+                        <span>2000$</span>
                     </div>
-                    <div class="sizes">
-                            <div class="size">
-                            <p>XS-S</p>
-                            </div>
-                            <div class="size">
-                                <p>M-L</p>
-                            </div>
-                    </div>
-                    <a href="#">Buy</a>
+                    <form>
+                        <button id="bestseller__cards_card_size-button" type="radio">XS-S</button>
+                        <button id="bestseller__cards_card_size-button" type="radio">M-L</button>
+                    </form>
+                    <button id="bestseller__cards_card_buy-button">Buy</button>
                 </div>
-                <div class="card">
+                <div class="bestseller__cards_card">
                     <img src="img/card3.png">
-                    <h3>
+                    <span>
                         Top ONE
-                    </h3>
+                    </span>
                     <p>
                         Top From Soft Materials
                     </p>
-                    <div class="price"> 
-                        <div class="circle">
-                        </div>
-                        <h3>2000$</h3>
+                    <div class="bestseller__cards_card_price">
+                        <form> 
+                            <button id="bestseller__cards_card_price-button-1" type="radio"></button>
+                            <button id="bestseller__cards_card_price-button-2" type="radio"></button>
+                        </form>
+                        <span>2000$</span>
                     </div>
-                    <div class="sizes">
-                            <div class="size">
-                            <p>XS-S</p>
-                            </div>
-                            <div class="size">
-                                <p>M-L</p>
-                            </div>
-                    </div>
-                    <a href="#">Buy</a>
+                    <form>
+                        <button id="bestseller__cards_card_size-button" type="radio">XS-S</button>
+                        <button id="bestseller__cards_card_size-button" type="radio">M-L</button>
+                    </form>
+                    <button id="bestseller__cards_card_buy-button">Buy</button>
                 </div>
-            </div>
-        </div>
-        <div class="about">
-            <div class="abouttext">
-                <h1>shh!</h1>
+              </div> 
+        </section>
+        <section class="about">
+            <div class="about__text">
+                <span>shh!</span>
                 <p>is an online clothing store. In the range:<br> 
                    clothes, underwear and accessories<br>
                    for girls and men<br>
@@ -137,89 +141,107 @@
                      on purchases over $100 and above
                 </p>
             </div>
-            <img src="img/about.png" height=100% width=45%>           
+            <img src="img/about.png">           
+        </section>
+        <section class="reviews">
+            <div class="reviews__heading">
+                <hr noshade color="black" size="1">
+                <span>Reviews</span>
             </div>
-        <div class="reviews">
-            <div class="heading">
-                <div class="hl"></div>
-                <p>Reviews</p>
-            </div>
-            <div class="reviewList">
-                <div class="review">
+            <div class="reviews__review-list">
+                <div class="reviews__review-list_review">
                     <p>Prosto pizdatie veshi, ya konchil neskolko raz, poka odeval dildo na svoy BONER.</p>
-                    <div class="user">
-                        <div class="circle">
+                    <div class="reviews__review-list_review_user-elem">
+                        <div class="reviews__review-list_review_user-elem_avatar">
+                            <img src="img/about.png">
                         </div>
                         <p>@zalupa</p>
                     </div>
                 </div>
-                <div class="review">
+                <div class="reviews__review-list_review">
                     <p>Prosto pizdatie veshi, ya konchil neskolko raz, poka odeval dildo na svoy BONER.</p>
-                    <div class="user">
-                        <div class="circle">
+                    <div class="reviews__review-list_review_user-elem">
+                        <div class="reviews__review-list_review_user-elem_avatar">
+                            <img src="img/about.png">
                         </div>
                         <p>@zalupa</p>
                     </div>
                 </div>
-                <div class="review">
+                <div class="reviews__review-list_review">
                     <p>Prosto pizdatie veshi, ya konchil neskolko raz, poka odeval dildo na svoy BONER.</p>
-                    <div class="user">
-                        <div class="circle">
+                    <div class="reviews__review-list_review_user-elem">
+                        <div class="reviews__review-list_review_user-elem_avatar">
+                            <img src="img/about.png">
                         </div>
                         <p>@zalupa</p>
                     </div>
                 </div>
             </div>
-                <div class="chevrons">
-                <img src="svg/chevronLeft.svg">
-                <p>3/12</p>
-                <img src="svg/chevronRight.svg">
-            </div>
-        </div>
+                <div class="reviews__switch">
+                    <svg id="reviews__switch_chevron" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7364 4.26035C16.0879 4.60748 16.0879 5.1703 15.7364 5.51743L9.17279 12L15.7364 18.4826C16.0879 18.8297 16.0879 19.3925 15.7364 19.7397C15.3849 20.0868 14.8151 20.0868 14.4636 19.7397L7.2636 12.6285C6.91213 12.2814 6.91213 11.7186 7.2636 11.3715L14.4636 4.26035C14.8151 3.91322 15.3849 3.91322 15.7364 4.26035Z" fill="black"/>
+                    </svg>
+                    <span>3/12</span>
+                    <svg id="reviews__switch_chevron" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.2636 4.26035C7.61508 3.91322 8.18492 3.91322 8.5364 4.26035L15.7364 11.3715C16.0879 11.7186 16.0879 12.2814 15.7364 12.6285L8.5364 19.7397C8.18492 20.0868 7.61508 20.0868 7.2636 19.7397C6.91213 19.3925 6.91213 18.8297 7.2636 18.4826L13.8272 12L7.2636 5.51743C6.91213 5.1703 6.91213 4.60748 7.2636 4.26035Z" fill="black"/>
+                    </svg>       
+                </div>
+        </section>
         <footer>
-            <div class="column">
-                <h3>Contact Us</h3>
-                <div class="social">
-                    <img src="svg/instagramWhite.svg">
-                    <p>@shhbrand</p>
+            <div class="footer__column">
+                <span>Contact Us</span>
+                <div class="footer__column_social">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.24407 9.24407C9.97498 8.51316 10.9663 8.10254 12 8.10254C13.0336 8.10254 14.025 8.51316 14.7559 9.24407C15.4868 9.97498 15.8974 10.9663 15.8974 12C15.8974 13.0336 15.4868 14.025 14.7559 14.7559C14.025 15.4868 13.0336 15.8974 12 15.8974C10.9663 15.8974 9.97498 15.4868 9.24407 14.7559C8.51316 14.025 8.10254 13.0336 8.10254 12C8.10254 10.9663 8.51316 9.97498 9.24407 9.24407ZM12 9.33331C11.2927 9.33331 10.6145 9.61426 10.1144 10.1144C9.61426 10.6145 9.33331 11.2927 9.33331 12C9.33331 12.7072 9.61426 13.3855 10.1144 13.8856C10.6145 14.3857 11.2927 14.6666 12 14.6666C12.7072 14.6666 13.3855 14.3857 13.8856 13.8856C14.3857 13.3855 14.6666 12.7072 14.6666 12C14.6666 11.2927 14.3857 10.6145 13.8856 10.1144C13.3855 9.61426 12.7072 9.33331 12 9.33331Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.71795 5.23077C7.79309 5.23077 6.90611 5.59817 6.25214 6.25214C5.59817 6.90611 5.23077 7.79309 5.23077 8.71795V15.2821C5.23077 16.2069 5.59817 17.0939 6.25214 17.7479C6.90611 18.4018 7.79309 18.7692 8.71795 18.7692H15.2821C16.2069 18.7692 17.0939 18.4018 17.7479 17.7479C18.4018 17.0939 18.7692 16.2069 18.7692 15.2821V8.71795C18.7692 7.79309 18.4018 6.90611 17.7479 6.25214C17.0939 5.59817 16.2069 5.23077 15.2821 5.23077H8.71795ZM5.38186 5.38186C6.26664 4.49707 7.46667 4 8.71795 4H15.2821C16.5333 4 17.7334 4.49707 18.6181 5.38186C19.5029 6.26664 20 7.46667 20 8.71795V15.2821C20 16.5333 19.5029 17.7334 18.6181 18.6181C17.7334 19.5029 16.5333 20 15.2821 20H8.71795C7.46667 20 6.26664 19.5029 5.38186 18.6181C4.49707 17.7334 4 16.5333 4 15.2821V8.71795C4 7.46667 4.49707 6.26664 5.38186 5.38186Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.935 7.03114C17.1865 7.25976 17.205 7.64896 16.9764 7.90044L16.9682 7.90946C16.7396 8.16094 16.3504 8.17948 16.0989 7.95085C15.8474 7.72223 15.8289 7.33303 16.0575 7.08155L16.0657 7.07253C16.2943 6.82105 16.6835 6.80252 16.935 7.03114Z"/>
+                    </svg>
+                    <a href="#">@shhbrand</a>
                 </div>
-                <div class="social">
-                    <img src="svg/telegramWhite.svg">
-                    <p>@shhbrand</p>
+                <div class="footer__column_social">
+                    <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12V12ZM12.287 9.906C11.509 10.23 9.953 10.9 7.621 11.916C7.243 12.066 7.044 12.214 7.026 12.358C6.996 12.601 7.301 12.697 7.716 12.828L7.891 12.883C8.299 13.016 8.849 13.171 9.134 13.177C9.394 13.183 9.683 13.077 10.002 12.857C12.181 11.386 13.306 10.643 13.376 10.627C13.426 10.615 13.496 10.601 13.542 10.643C13.589 10.684 13.584 10.763 13.579 10.784C13.549 10.913 12.352 12.025 11.733 12.601C11.54 12.781 11.403 12.908 11.375 12.937C11.3133 13 11.2507 13.062 11.187 13.123C10.807 13.489 10.523 13.763 11.202 14.211C11.529 14.427 11.791 14.604 12.052 14.782C12.336 14.976 12.62 15.169 12.988 15.411C13.081 15.471 13.171 15.536 13.258 15.598C13.589 15.834 13.888 16.046 14.255 16.012C14.469 15.992 14.69 15.792 14.802 15.192C15.067 13.775 15.588 10.706 15.708 9.441C15.7153 9.33584 15.711 9.2302 15.695 9.126C15.6856 9.04192 15.6449 8.96446 15.581 8.909C15.49 8.84619 15.3815 8.81365 15.271 8.816C14.971 8.821 14.508 8.982 12.287 9.906V9.906Z" />
+                    </svg>
+                    <a href="#">@shhbrand</a>
                 </div>
-                <div class="social">
-                    <img src="svg/vkWhite.svg">
-                    <p>vk.com/shhbrand</p>
-                </div>   
-                <div class="social">
-                    <img src="svg/mailWhite.svg">
-                    <p>gubina_96@mail.com</p>
-                </div>
+                <div class="footer__column_social">
+                    <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6332 7.64356C19.7449 7.27228 19.6331 7 19.1046 7H17.3535C16.908 7 16.7044 7.23555 16.5926 7.49425C16.5926 7.49425 15.7023 9.66528 14.4407 11.073C14.0335 11.4826 13.8475 11.6119 13.6255 11.6119C13.5145 11.6119 13.3532 11.4826 13.3532 11.1113V7.64356C13.3532 7.19802 13.2247 7 12.8534 7H10.1019C9.82401 7 9.65633 7.206 9.65633 7.40243C9.65633 7.82402 10.2871 7.92143 10.3518 9.10955V11.687C10.3518 12.2515 10.2504 12.3545 10.0268 12.3545C9.43356 12.3545 7.98993 10.1755 7.13318 7.68109C6.9663 7.19642 6.79782 7.0008 6.35068 7.0008H4.60045C4.09981 7.0008 4 7.23635 4 7.49505C4 7.95976 4.59326 10.2593 6.76349 13.3007C8.21031 15.3775 10.2472 16.5033 12.1028 16.5033C13.2151 16.5033 13.3524 16.2534 13.3524 15.8222V14.2525C13.3524 13.7526 13.4586 13.652 13.8107 13.652C14.0694 13.652 14.515 13.783 15.5538 14.7834C16.7403 15.97 16.9367 16.5025 17.6035 16.5025H19.3537C19.8535 16.5025 20.1034 16.2526 19.9597 15.7592C19.8024 15.2681 19.2355 14.5535 18.4834 13.7079C18.0745 13.2256 17.4637 12.7066 17.2777 12.4471C17.0182 12.1126 17.0932 11.9649 17.2777 11.6678C17.2785 11.6686 19.4112 8.6648 19.6332 7.64356V7.64356Z" />
+                    </svg>
+                    <a href="#">vk.com/shhbrand</a>
+                </div> 
+                <div class="footer__column_social">
+                    <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.4 19H5.6C5.17565 19 4.76869 18.8288 4.46863 18.524C4.16857 18.2193 4 17.806 4 17.375V7.55431C4.01795 7.13571 4.19441 6.74032 4.49254 6.45069C4.79068 6.16107 5.18744 5.9996 5.6 6H18.4C18.8243 6 19.2313 6.17121 19.5314 6.47595C19.8314 6.7807 20 7.19402 20 7.625V17.375C20 17.806 19.8314 18.2193 19.5314 18.524C19.2313 18.8288 18.8243 19 18.4 19ZM5.6 9.14275V17.375H18.4V9.14275L12 13.475L5.6 9.14275ZM6.24 7.625L12 11.525L17.76 7.625H6.24Z"/>
+                    </svg>
+                    <a href="#">gubina_96@mail.com</a>
+                </div> 
             </div>
-                <div class="vl"></div>
-            <div class="column">
-                <h3>Address</h3>
+            <div class="footer_vertical-line"></div>
+            <div class="footer__column">
+                <span>Address</span>
                     <p>USA,<br>
                     zalupa mira,<br>
                     zalupa 69420
                     </p>            
                     <p>(8)800-555-35-35</p>
             </div>
-            <div class="vl"></div>
-            <div class="column2">
-                <div class="column"> 
+            <div class="footer_vertical-line"></div>
+            <div class="footer__column-row">
+                <div class="footer__column"> 
                     <a href="#">Сonfidentiality</a>
                     <a href="#">Support</a> 
                     <a href="#">Feedback</a> 
                     <a href="#">Shipping and payment</a>
                 </div> 
-                    <div class="column"> 
+                <div class="footer__column"> 
                         <a href="#">Return and Exchange</a> 
                         <a href="#">Clothing Care</a> 
                         <a href="#">Size table</a> 
                     </div>     
             </div>
-            <div class="logo"> <h2>shh!</h2></div>
+            <div class="footer__logo"> <h2>shh!</h2>
+            </div>
            
         </footer>
     </body>
